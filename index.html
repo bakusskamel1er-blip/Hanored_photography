@@ -245,28 +245,28 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
 <!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-inner">
-    <div class="nav-brand" onclick="scrollTo('hero')">Hanored Photography</div>
+    <div class="nav-brand" onclick="goTo('hero')">Hanored Photography</div>
     <div class="nav-links" id="navlinks">
-      <button onclick="scrollTo('hero')" class="active" data-nav="hero">Accueil</button>
-      <button onclick="scrollTo('portfolio')" data-nav="portfolio">Portfolio</button>
-      <button onclick="scrollTo('services')" data-nav="services">Services</button>
-      <button onclick="scrollTo('about')" data-nav="about">À propos</button>
-      <button onclick="scrollTo('testimonials')" data-nav="testimonials">Témoignages</button>
-      <button onclick="scrollTo('contact')" data-nav="contact">Contact</button>
-      <button class="nav-cta" onclick="scrollTo('contact')">Réserver</button>
+      <button onclick="goTo('hero')" class="active" data-nav="hero">Accueil</button>
+      <button onclick="goTo('portfolio')" data-nav="portfolio">Portfolio</button>
+      <button onclick="goTo('services')" data-nav="services">Services</button>
+      <button onclick="goTo('about')" data-nav="about">À propos</button>
+      <button onclick="goTo('testimonials')" data-nav="testimonials">Témoignages</button>
+      <button onclick="goTo('contact')" data-nav="contact">Contact</button>
+      <button class="nav-cta" onclick="goTo('contact')">Réserver</button>
     </div>
     <button class="ham" id="ham" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mob-menu" id="mobmenu">
-    <button onclick="scrollTo('hero');toggleMenu()">Accueil</button>
-    <button onclick="scrollTo('portfolio');toggleMenu()">Portfolio</button>
-    <button onclick="scrollTo('services');toggleMenu()">Services</button>
-    <button onclick="scrollTo('about');toggleMenu()">À propos</button>
-    <button onclick="scrollTo('testimonials');toggleMenu()">Témoignages</button>
-    <button onclick="scrollTo('contact');toggleMenu()">Contact</button>
-    <button class="mcta" onclick="scrollTo('contact');toggleMenu()">Réserver</button>
+    <button onclick="goTo('hero');toggleMenu()">Accueil</button>
+    <button onclick="goTo('portfolio');toggleMenu()">Portfolio</button>
+    <button onclick="goTo('services');toggleMenu()">Services</button>
+    <button onclick="goTo('about');toggleMenu()">À propos</button>
+    <button onclick="goTo('testimonials');toggleMenu()">Témoignages</button>
+    <button onclick="goTo('contact');toggleMenu()">Contact</button>
+    <button class="mcta" onclick="goTo('contact');toggleMenu()">Réserver</button>
   </div>
 </nav>
 
@@ -279,11 +279,11 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
     <h1 class="pf hero-title">Capturez des Moments.<br/><span class="gold">Créez des Souvenirs.</span></h1>
     <p class="hero-sub">Mariage · Lifestyle · Portrait · Événementiel · Studio Artistique</p>
     <div class="hero-btns">
-      <button class="btn-gold" onclick="scrollTo('contact')">
+      <button class="btn-gold" onclick="goTo('contact')">
         <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
         Réserver une séance
       </button>
-      <button class="btn-out" onclick="scrollTo('portfolio')">
+      <button class="btn-out" onclick="goTo('portfolio')">
         <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         Voir le portfolio
       </button>
@@ -318,7 +318,7 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
     <div class="two-col">
       <div class="fade from-left">
         <div class="img-frame">
-          <img src="https://images.unsplash.com/photo-1531844251246-9a1bfacd6ef5?w=800&q=85" alt="Afrique Moderne"/>
+          <img src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=800&q=85" alt="Afrique Moderne"/>
           <div class="img-frame-overlay"></div>
           <div class="img-accent"></div>
         </div>
@@ -328,7 +328,7 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
         <h2 class="pf gold" style="font-size:clamp(1.7rem,4vw,2.9rem);margin-bottom:24px;line-height:1.2">Célébrez<br/>l'Afrique Moderne</h2>
         <p style="color:var(--muted);font-family:'Poppins',sans-serif;font-size:15px;line-height:1.92;margin-bottom:16px">Entre tradition et modernité, nous capturons la beauté de la femme et de l'homme africains contemporains. Des tenues qui parlent d'héritage, des regards qui racontent l'avenir.</p>
         <p style="color:var(--muted);font-family:'Poppins',sans-serif;font-size:15px;line-height:1.92;margin-bottom:36px">Chaque image est une célébration — de l'identité, de la culture, de la fierté. L'élégance africaine n'a jamais été aussi lumineuse.</p>
-        <button class="btn-gold" onclick="scrollTo('contact')">
+        <button class="btn-gold" onclick="goTo('contact')">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           Explorer cette collection
         </button>
@@ -365,7 +365,7 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
           <div class="stat"><div class="stat-val" data-target="50" data-suffix="+">0+</div><div class="stat-lbl">Mariages</div></div>
           <div class="stat"><div class="stat-val" data-target="5" data-suffix=" ans">0 ans</div><div class="stat-lbl">Expérience</div></div>
         </div>
-        <button class="btn-gold" onclick="scrollTo('contact')">
+        <button class="btn-gold" onclick="goTo('contact')">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
           Réserver une consultation
         </button>
@@ -463,11 +463,11 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
       </div>
       <div class="ftr-col">
         <h4>Navigation</h4>
-        <button onclick="scrollTo('hero')">Accueil</button>
-        <button onclick="scrollTo('portfolio')">Portfolio</button>
-        <button onclick="scrollTo('services')">Services</button>
-        <button onclick="scrollTo('about')">À propos</button>
-        <button onclick="scrollTo('contact')">Contact</button>
+        <button onclick="goTo('hero')">Accueil</button>
+        <button onclick="goTo('portfolio')">Portfolio</button>
+        <button onclick="goTo('services')">Services</button>
+        <button onclick="goTo('about')">À propos</button>
+        <button onclick="goTo('contact')">Contact</button>
       </div>
       <div class="ftr-col">
         <h4>Services</h4>
@@ -504,7 +504,7 @@ footer{background:#070707;border-top:1px solid var(--border);padding:58px 5% 26p
 // Portfolio data
 const PORTFOLIO = [
   {cat:"Mariage",label:"Cérémonie au coucher du soleil",src:"https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80"},
-  {cat:"Lifestyle",label:"Éclat naturel",src:"https://images.unsplash.com/photo-1531844251246-9a1bfacd6ef5?w=600&q=80"},
+  {cat:"Lifestyle",label:"Éclat naturel",src:"https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=600&q=80"},
   {cat:"Portrait",label:"Portrait corporate",src:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80"},
   {cat:"Mariage",label:"Promesses éternelles",src:"https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=600&q=80"},
   {cat:"Événementiel",label:"Gala d'entreprise",src:"https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"},
@@ -514,7 +514,7 @@ const PORTFOLIO = [
   {cat:"Studio",label:"Création artistique",src:"https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&q=80"},
 ];
 
-function scrollTo(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+function goTo(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
 
 // NAV scroll
 window.addEventListener('scroll',()=>{
